@@ -1,0 +1,110 @@
+*  {
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+  .header {
+    height: 100%;
+    background-image: url("../img/header-bg.png");
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    .container {
+      box-sizing: border-box;
+      display: flex;
+      padding: 90px 90px 0 90px;
+      .sub-header {
+        flex-basis: 75%;
+        mark {
+          background: transparent;
+          color: white;
+          &.yellow {
+            color: yellow;
+          }
+        }
+        p {
+          opacity: 0.7;
+        }
+        .date {
+          margin-top: 110px;
+          margin-bottom: 160px;
+        }
+
+      }
+      .passes {
+        flex-basis: 25%;
+      }
+    }
+    .registrate {
+      text-align: center;
+      button {
+        background: transparent;
+        width: 50%;
+        font-size: 30px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+        border: solid 1px yellow;
+        a {
+          width: 100%;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: yellow;
+        }
+      }
+      p {
+        opacity: 0.7;
+      }   
+    }
+    .click-down {
+      position: relative;
+      margin-top: 15px;
+      text-align: center;
+      height: 100px;
+      img {
+        position: absolute;
+        opacity: 0.7;
+        animation: 0.4s linear arrow-down infinite;
+      }
+    }
+    @keyframes arrow-down {
+      0%{}
+      25%{top:12px;}
+      50%{top:25px;}
+      100%{top:50px;}
+    }
+  }
+  .footer {
+    border-top: solid 1px white;
+    background: #55719f;
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    .managers, .headliner {
+      box-sizing: border-box;
+      flex-basis: 50%;
+      padding: 5vw;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .headliner {
+      align-self: center;
+    }
+    .managers {
+      border-right: solid 1px white;
+    }
+  }
+
+}
+
+
+
+
+
